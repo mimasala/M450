@@ -15,7 +15,7 @@ This project demonstrates the implementation of security using Spring Boot 3.0 a
 * JSON Web Tokens (JWT)
 * BCrypt
 * Maven
- 
+
 ## Getting Started
 To get started with this project, you will need to have the following installed on your local machine:
 

@@ -11,9 +11,13 @@
 	<groupId>com.alibou</groupId>
 	<artifactId>security</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>security</name>
+    <packaging>pom</packaging>
+    <name>security</name>
 	<description>Demo project for Spring Boot</description>
-	<properties>
+    <modules>
+        <module>M450_Aufgaben</module>
+    </modules>
+    <properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
