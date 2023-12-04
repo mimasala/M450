@@ -1,4 +1,4 @@
-package ch.tbz.two.software;
+package ch.tbz.aufg2.software;
 
 /*
 3	Bank Simulation with Account class (Competence O2)

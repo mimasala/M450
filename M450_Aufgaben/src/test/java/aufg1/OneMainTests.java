@@ -1,4 +1,4 @@
-package one;
+package aufg1;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -7,7 +7,7 @@ public class OneMainTests {
     @Test
     void test_calculate_price(){
 
-        ch.tbz.one.Main main = new ch.tbz.one.Main();
+        ch.tbz.aufg1.Main main = new ch.tbz.aufg1.Main();
         boolean test_ok = true;
 
         double price = main.calculatePrice(10000, 0, 0, 0, 0);

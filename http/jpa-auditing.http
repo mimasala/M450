@@ -27,7 +27,7 @@ Content-Type: application/json
 GET http://localhost:8080/api/v1/books
 Authorization: Bearer {{auth-token}}
 
-### Update one book
+### Update aufg1 book
 POST http://localhost:8080/api/v1/books
 Authorization: Bearer {{auth-token}}
 Content-Type: application/json
@@ -39,6 +39,6 @@ Content-Type: application/json
 }
 
 
-### Query the Books one more time
+### Query the Books aufg1 more time
 GET http://localhost:8080/api/v1/books
 Authorization: Bearer {{auth-token}}

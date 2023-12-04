@@ -1,4 +1,4 @@
-package ch.tbz.two.software;
+package ch.tbz.aufg2.software;
 
 import com.google.gson.Gson;
 

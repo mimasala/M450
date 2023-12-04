@@ -1,4 +1,4 @@
-package ch.tbz.one;
+package ch.tbz.aufg1;
 
 public class Main {
     public double calculatePrice(double baseprice, double specialprice, double extraprice, int extras, double discount) {
