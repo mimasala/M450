@@ -28,17 +28,23 @@ public class Bank {
 //      a = null;
     }
 
+//    public Account getAccount(int nr) {
+//        for (Account a : accounts) {
+//            if (a.getId() == nr) {
+//                return a;
+//            }
+//        }
+//
+//        // Todo: Möglichkeit mit Lambda-Funktion? Im Sinne von:
+//        // Account a = accounts.get(a -> (a.getId() == Nr));
+//
+//        return null;
+//    }
     public Account getAccount(int nr) {
-        for (Account a : accounts) {
-            if (a.getId() == nr) {
-                return a;
-            }
-        }
-
-        // Todo: Möglichkeit mit Lambda-Funktion? Im Sinne von:
-        // Account a = accounts.get(a -> (a.getId() == Nr));
-
-        return null;
+        return accounts.stream()
+                .filter(a -> a.getId() == nr)
+                .findFirst()
+                .orElse(null);
     }
 
     public void printAccountDetails(Account a) {
