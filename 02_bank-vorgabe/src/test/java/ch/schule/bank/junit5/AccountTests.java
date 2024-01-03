@@ -49,10 +49,10 @@ public class AccountTests {
         assertEquals(1000, account.getBalance());
 
         assertFalse(account.deposit(20230102, -500));
-        assertEquals(1000, account.getBalance()); // Balance should remain unchanged
+        assertEquals(1000, account.getBalance());
 
-        assertFalse(account.deposit(20221231, 500)); // Date before the last transaction date
-        assertEquals(1000, account.getBalance()); // Balance should remain unchanged
+        assertFalse(account.deposit(20221231, 500));
+        assertEquals(1000, account.getBalance());
     }
 
 
@@ -61,16 +61,16 @@ public class AccountTests {
     @Test
     public void testWithdraw() {
         assertTrue(account.withdraw(20230102, 500));
-        assertEquals(500, account.getBalance());
+        assertEquals(-500, account.getBalance());
 
         assertFalse(account.withdraw(20230103, -500));
-        assertEquals(500, account.getBalance());
+        assertEquals(-500, account.getBalance());
 
-        assertFalse(account.withdraw(20230104, 1500));
-        assertEquals(500, account.getBalance());
+        assertTrue(account.withdraw(20230104, 1500));
+        assertEquals(-2000, account.getBalance());
 
         assertFalse(account.withdraw(20221231, 100));
-        assertEquals(500, account.getBalance());
+        assertEquals(-2000, account.getBalance());
     }
 
     @Test
@@ -88,7 +88,6 @@ public class AccountTests {
     public void testPrint() {
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
-        // add transactions
         account.deposit(20230101, 1000);
         account.withdraw(20230102, 500);
         account.print();

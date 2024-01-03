@@ -25,9 +25,22 @@ import static org.junit.jupiter.api.Assertions.*;
 public class SavingsAccountTests
 {
 	@Test
-	public void test()
-	{
-		fail("toDo");
+	public void testWithdraw() {
+		SavingsAccount account = new SavingsAccount("SA-1000");
+
+		account.deposit(20220101, 1000);
+
+		boolean withdrawSuccess = account.withdraw(20220102, 500);
+		assertTrue(withdrawSuccess, "Withdrawal should be successful");
+		assertEquals(500, account.getBalance(), "Balance should be reduced by the withdrawn amount");
+
+		withdrawSuccess = account.withdraw(20220103, 1000);
+		assertFalse(withdrawSuccess, "Withdrawal should fail due to insufficient funds");
+		assertEquals(500, account.getBalance(), "Balance should remain unchanged after failed withdrawal");
+
+		withdrawSuccess = account.withdraw(20220104, -100);
+		assertFalse(withdrawSuccess, "Withdrawal should fail due to negative withdrawal amount");
+		assertEquals(500, account.getBalance(), "Balance should remain unchanged after failed withdrawal");
 	}
 }
 

@@ -23,23 +23,8 @@ public class Bank {
     public void deleteAccount(Account a) {
         System.out.println("Konto mit Nummer " + a.getId() + " wurde gelöscht.");
         accounts.remove(a);
-//      The following doesn't work, is copy of a; no passing by reference in Java
-//      a.pseudoDeleteAccount();
-//      a = null;
     }
 
-//    public Account getAccount(int nr) {
-//        for (Account a : accounts) {
-//            if (a.getId() == nr) {
-//                return a;
-//            }
-//        }
-//
-//        // Todo: Möglichkeit mit Lambda-Funktion? Im Sinne von:
-//        // Account a = accounts.get(a -> (a.getId() == Nr));
-//
-//        return null;
-//    }
     public Account getAccount(int nr) {
         return accounts.stream()
                 .filter(a -> a.getId() == nr)
