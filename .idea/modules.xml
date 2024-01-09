@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/M450.iml" filepath="$PROJECT_DIR$/.idea/M450.iml" />
       <module fileurl="file://$PROJECT_DIR$/M450_Aufgaben/M450_Aufgaben.iml" filepath="$PROJECT_DIR$/M450_Aufgaben/M450_Aufgaben.iml" />
+      <module fileurl="file://$PROJECT_DIR$/addressbook-backend/addressbook-backend.iml" filepath="$PROJECT_DIR$/addressbook-backend/addressbook-backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/02_bank-vorgabe/bank0.iml" filepath="$PROJECT_DIR$/02_bank-vorgabe/bank0.iml" />
       <module fileurl="file://$PROJECT_DIR$/M450/security.iml" filepath="$PROJECT_DIR$/M450/security.iml" />
     </modules>
