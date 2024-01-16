@@ -55,9 +55,6 @@ public class AccountTests {
         assertEquals(1000, account.getBalance());
     }
 
-
-
-
     @Test
     public void testWithdraw() {
         assertTrue(account.withdraw(20230102, 500));

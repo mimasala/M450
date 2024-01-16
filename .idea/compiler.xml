@@ -12,12 +12,6 @@
         <module name="bank0" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="addressbook-backend" target="20" />
-      <module name="bank0" target="19" />
-      <module name="M450_Aufgaben" target="17" />
-      <module name="security" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

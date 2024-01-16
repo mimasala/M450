@@ -27,7 +27,6 @@ class AddressServiceTest {
         MockitoAnnotations.openMocks(this);
     }
 
-
     @Test
     void save() {
         Address newAddress = new Address();
