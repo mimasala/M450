@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="addressbook-backend" />
         <module name="M450_Aufgaben" />
+        <module name="addressbook-backend" />
+        <module name="spring-boot-angular-basic" />
         <module name="bank0" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="M450_Aufgaben" options="-parameters" />
       <module name="addressbook-backend" options="-parameters" />
       <module name="bank0" options="-parameters" />
+      <module name="spring-boot-angular-basic" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,5 +1,6 @@
 package ch.tbz.m450.testing.tools;
 
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -12,12 +13,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class StudentApplicationTests {
-	@Autowired
-	private MockMvc mockMvc;
+public class StudentControllerTests {
+    @Autowired
+    private MockMvc mockMvc;
 
-	@Test
-	void contextLoads() {
-	}
-
+    @Test
+    public void shouldReturnDefaultMessage() throws Exception {
+        this.mockMvc.perform(get("/hello"))
+                .andExpect(status().isOk())
+                .andExpect(MockMvcResultMatchers.content().string("Hello, World!"));
+    }
 }
