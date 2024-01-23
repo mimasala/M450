@@ -12,6 +12,18 @@
         <module name="spring-boot-angular-basic" />
         <module name="bank0" />
       </profile>
+      <profile name="Annotation profile for recipe-planner-backend" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-configuration-processor/3.2.1/spring-boot-configuration-processor-3.2.1.jar" />
+        </processorPath>
+        <module name="recipe-planner-backend" />
+      </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
@@ -19,6 +31,7 @@
       <module name="M450_Aufgaben" options="-parameters" />
       <module name="addressbook-backend" options="-parameters" />
       <module name="bank0" options="-parameters" />
+      <module name="recipe-planner-backend" options="-parameters" />
       <module name="spring-boot-angular-basic" options="-parameters" />
     </option>
   </component>
