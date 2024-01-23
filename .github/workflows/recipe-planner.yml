@@ -18,7 +18,9 @@ jobs:
       - run: |
           cd Recipe-Planner 
           cd recipe-planner-backend
-          ls
+          ll
+          ls -al
+          echo "hello"
   release:
     runs-on: ubuntu-latest
     needs: test
