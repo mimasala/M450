@@ -16,7 +16,8 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
       - run: |
-          ls
+          cd Recipe-Planner 
+          cd recipe-planner-backend
           mvn -f pom.xml clean test
   release:
     runs-on: ubuntu-latest
