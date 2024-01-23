@@ -19,8 +19,7 @@ public class StudentControllerTests {
 
     @Test
     public void shouldReturnDefaultMessage() throws Exception {
-        this.mockMvc.perform(get("/hello"))
-                .andExpect(status().isOk())
-                .andExpect(MockMvcResultMatchers.content().string("Hello, World!"));
+        this.mockMvc.perform(get("/students"))
+                .andExpect(status().isOk());
     }
 }
