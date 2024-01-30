@@ -16,7 +16,7 @@ jobs:
           cache: maven
 
       - name: List Dir
-        run: ls -al
+        run: echo $(ls -al)
 
       - name: Build and Run Tests with Maven
         run: mvn -B verify
