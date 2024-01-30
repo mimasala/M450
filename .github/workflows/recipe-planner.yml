@@ -15,11 +15,11 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Build and Run Tests with Maven
-        working-directory: ./Recipe-Planner/recipe-planner-backend
+        working-directory: ../Recipe-Planner/recipe-planner-backend
         run: mvn -B verify
 
       - name: Generate Test Reports
-        working-directory: ./Recipe-Planner/recipe-planner-backend
+        working-directory: ../Recipe-Planner/recipe-planner-backend
         run: mvn surefire-report:report
 
       - name: Upload SureFire Report
